@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    /* text Color */
+    --main-text-color: #010558;
+    --second-text-color:#D9B00F;
+    --para-text-color: #585858;
+
+    /* All Background Color */
+    --landing-bg-button: #F4C921;
+    --second-bg-button:#EFE4BB;
+    /* Cards */
+    --card-bg-color: #FFFADE;
+    --secondory-bgcard-color:#E7FCE1;
+    --third-bgcard-color:#FAF7F4;
+     /*Container*/
+     --main-container-margin:30px; 
+     
+     
+    
+  }
+
+.text-color-nav{
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-size: 12px;
+}
+.text-color-nav:hover{
+    color: var(--main-text-color);
+}
+.showcase-landing{
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-left: -20px; */
+}
+.gradient-color{
+    background-image: linear-gradient(#E2DDF8, #F2DFF8);
+}
+.inner-text-showcase{
+    font-size: 50px;
+    font-weight: 700;
+    color:var(--main-text-color) ;
+}
+.showcase-para-text p{
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--para-text-color);
+}
+.showcase-form-style{
+    margin-top: 50px;
+}
+.showcase-form-style input{
+    height: 70px;    
+    position: relative;
+}
