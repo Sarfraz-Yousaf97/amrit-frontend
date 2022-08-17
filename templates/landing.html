@@ -16,25 +16,24 @@
             type = "image/x-icon">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#topnav-menu" data-bs-offset="60">
-
     <main>
-        <nav class="navbar bg-light navbar-expand-lg navigation fixed-top sticky ">
-            <div class="d-flex justify-content-between  ">
-                
-                <div class="nav-logo-link d-flex" >
-                    <a class="ml-3" href="#">
-                        <img src="/static/image/logo-nav.png" alt="" style="width: 240px;">
+        <nav class="navbar bg-light navbar-expand-lg navigation fixed-top sticky">
+            <div class="container">
+                <div class="">
+                    <a  href="#">
+                        <img src="/static/image/logo-nav.png" alt="" style="width: 240px; margin-left:-40px ;">
                     </a>
                 </div>
-
-
-                <div class="collapse  navbar-collapse "id="topnav-menu-content" style="margin-left: 380px;">
-                    <ul class="navbar-nav ms-auto text-uppercase" id="topnav-menu">
+                <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                        <i class="fa fa-fw fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="topnav-menu-content" style="margin-left:450px;">
+                    <ul class="navbar-nav ms-auto" id="topnav-menu" >
                         <li class="nav-item ml-2 mr-2">
                             <a class="nav-link text-color-nav" href="#home">Home</a>
                         </li>
                         <li class="nav-item ml-2 mr-2">
-                            <a class="nav-link text-color-nav" href="#features">How it Works</a>
+                            <a class="nav-link text-color-nav" href="#works">How it Works</a>
                         </li>
                         <li class="nav-item ml-2 mr-2">
                             <a class="nav-link text-color-nav" href="#pricing">FAQS</a>
@@ -42,63 +41,236 @@
                         <li class="nav-item ml-2 mr-2">
                             <a class="nav-link text-color-nav" href="#pricing">Pricing</a>
                         </li>
+    
                     </ul>
-
-                        <div class="my-2 ms-lg-2 ml-2" style="background-color: #F0C620;">
-                            <a href="#" class="text-color-nav btn w-xs" style="padding-left:40px; padding-right:40px ;">LogIn</a>
-                        </div>
-                        
+                    <div class="my-2 ms-lg-2">
+                        <a href="#" class="btn pl-4 pr-4  w-xs text-color-nav" style="background-color: #F0C620; ">LogIn</a>
+                    </div>
                 </div>
             </div>
         </nav>
-
-
-
+        <!-- Home -->
         <section class="mt-4">
             <div class="showcase-landing">
                 <div class="gradient-color">
-                    <div class="row">
-                        <div class="col col-lg-7">
-                            <div class="m-4" class="">
-                                <div class="main ml-4">
-                                    <h1 class="inner-text-showcase mb-4">Do you need <br> a Patent Search?</h1>
-                                    <div class="text-left showcase-para-text  pt-2 mb-4">
-                                        <p class="">EPS has revolutionized the intellectual property space by providing fast, budget friendly
-                                            and effective patent searchs. Our AI advanced patent search system is state of the art and
-                                            designed for inventors, entrepreneurs and brands looking to innovate.
-                                        </p>
-                                        <p>
-                                            When you have ideas you need to know if its out there! The process is fast, simple and
-                                            well organized from 1 to 1000 searches. The Neurel IP frameworks analyzes, and searches
-                                            beyond keywords and delivers curated results fast!</p>
-                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero consequuntur delectus aliquid dolor, hic mollitia dolorum itaque blanditiis optio praesentium voluptate saepe reprehenderit maiores debitis natus possimus animi. Modi.</p> -->
-                                    </div>
-                                    <div class="mt-4">
-                                        <form class="showcase-form-style">
-                                            <input class="form-control mt-4" type="text">
-                                        </form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-lg-7">
+                                <div class="mt-4">
+                                    <div class="main">
+                                        <h1 class="inner-text-showcase mb-4">Do you need <br> a Patent Search?</h1>
+                                        <div class="text-left showcase-para-text  pt-2 mb-4">
+                                            <p class="">EPS has revolutionized the intellectual property space by providing fast, budget friendly
+                                                and effective patent searchs. Our AI advanced patent search system is state of the art and
+                                                designed for inventors, entrepreneurs and brands looking to innovate.
+                                            </p>
+                                            <p>
+                                                When you have ideas you need to know if its out there! The process is fast, simple and
+                                                well organized from 1 to 1000 searches. The Neurel IP frameworks analyzes, and searches
+                                                beyond keywords and delivers curated results fast!</p>
+                                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero consequuntur delectus aliquid dolor, hic mollitia dolorum itaque blanditiis optio praesentium voluptate saepe reprehenderit maiores debitis natus possimus animi. Modi.</p> -->
+                                        </div>
+                                        <div class="mt-4 ">
+                                            <form  class="showcase-form-style">
+                                                <div class="inner-addon left-addon">
+                                                    <i class="glyphicon fas fa-search"></i>
+                                                    <input class="form-control pt-4 pb-4" placeholder="Start your search now " type="text">
+                                                </div>
+                                                <div class="submit-form-button right-addon">
+                                                    <input class="btn" type="submit" value="Search">
+                                                </div>
+                                            </form>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col col-lg-5">
+                                <div class="container">
+                                    <div class="text-center"> 
+                                        <!-- <button class="button-pasue" id="play"><i class="fas fa-play"></i></button>  -->
+                                        <div class="video-main-div">
+                                            <video onclick="playPause()" class="video-landing" id="video1" width="400" muted>
+                                                <source src="/static/video/super.mp4" type="video/mp4">
+                                                Your browser does not support HTML video.
+                                            </video>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div class="col col-lg-5">
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
-                            <h1>super</h1>
+                        <div class="showcase-fotter mt-4 mb-4">
+                            <h2 class="font-weight-bold">All one simple step! Let us go to work for you. </h2>
+                            <p style="color: #010558; margin-top: -7px;">Simply explain your product or invention as if you were going to explain it to someone for the first time.</p>
                         </div>
-                    
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Attorney Search -->
+        <section>
+            <div class="main">
+                <div class="container mt-4">
+                    <div class="content-review">
+                        <div class="row">
+                            <div class="col col-lg-6 col-sm-12">
+                                <div class="content text-left">
+                                    <h6 class="text-uppercase">Attorney Search Review</h6>
+                                    <h1>Validate your <br> results with a <br> atent Atrorney <br> Review!</h1>
+                                    <p>Our network of Resitered Patent Attoneys can review your results
+                                        provide you feedback on key results and provide you with a letter ofo
+                                        pnion tailored to suit the particular facts and situation of your search.
+                                        This Standard Document has integrated  notes to consider and possibly
+                                        important explanations and drafting tips. </p>
+
+                                    <a class="mt-4" href="#">
+                                        <button class="btn attorney-search-btn text-uppercase">Start Here</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col col-lg-6 col-sm-12">
+                                <div class="content content-img-review">
+                                    <img src="/static//image/image 2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How It Works -->
+        <section id="works">
+            <div class="container">
+                <div class="main">
+                    <div class="content mt-4 mb-4">
+                        <div class="header text-center">
+                            <h6 class="text-uppercase">Made it easy for you</h6>
+                            <h1>How It Works</h1>
+                        </div>
+                        <div class="color-main-bg">
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-4 col-md-3 col-sm-2">
+                                <div class="layout-card-item">
+                                    <div class="absolute-card-img">
+                                        <img src="/static/image/search.png" alt="">
+                                    </div>
+                                    <div class="card ml-4 card-style-type" style="width: 19rem;">
+                                        <div class="card-body ml-2 mr-1 mt-4">
+                                            <h3 class="card-title card-title-font">Start Your Patent Search Step 1.</h3>
+                                            <p class="card-text">Brainstorm 3-5 keywords and a description that representsy our invention; avoid generic terms. Is your invention utilitarian or an ornamental design?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-lg-4 col-md-3 col-sm-2 mb-4">
+                                <div class="layout-card-item-mid mb-4">
+                                    <div class="absolute-card-img">
+                                        <img src="/static/image/information.png" alt="">
+                                    </div>
+                                    <div class="card ml-4 card-style-type" style="width: 19rem;">
+                                        <div class="card-body ml-2 mr-1 mt-4">
+                                            <h3 class="card-title mt-2 card-title-font">Explain Your <br> Search.</h3>
+                                            <p class="card-text">Width
+                                                Submit your your form and your
+                                                AI will get to work for you. Keep
+                                                a eye out for email updates and
+                                                completion of your search on the
+                                                platform. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <a class="mt-4" href="#">
+                                        <button class="btn card-work-btn">WATCH VIDEO HERE 
+                                            <i class="button-pasue-video fas fa-play"></i></button> 
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col col-lg-4 col-md-3 col-sm-2">
+                                <div class="layout-card-item">
+                                    <div class="absolute-card-img">
+                                        <img class="ml-2" src="/static/image/start-2.png" style="width: 50px; margin-top: -20px;" alt="">
+                                    </div>
+                                    <div class="card ml-4 card-style-type" style="width: 19rem;">
+                                        <div class="card-body ml-2 mr-1 mt-4">
+                                            <h3 class="card-title card-title-font">Play & Get <br> Started.</h3>
+                                            <p class="card-text">Submit your your form and your
+                                                AI will get to work for you. Keep
+                                                a eye out for email updates and
+                                                completion of your search on the
+                                                platform. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing -->
+        <section  style="height: 100vh;">
+            <div class="container">
+                <div class="main">
+                    <div class="content mt-4 mb-4">
+                        <div class="header text-center">
+                            <h6 class="text-uppercase">Pricing</h6>
+                            <h1>Pricing</h1>
+                        </div>
+                        <div class="content content-pricing">
+                            <div class="row">
+                                <div class="col col-lg-6 col-md-4 col-sm-4">
+                                    <div class="card card-bg-pricing">
+                                        <div class="card-body ml-3 card-body-style">
+                                          <h2 class="card-title">$199</h2>
+                                          <p class="card-text card-title-seco">Standard PatentSearch.</p>
+                                            <p style="">For example, on a bicycle, the chain and the sprockets </p>
+                                        </div>
+                                      </div>
+                                </div>
+                                
+                                <div class="col col-lg-4 col-md-4 col-sm-4 card-mid-absolute">
+                                    <div class="card card-bg-pricing">
+                                        <div class="card-body ml-3 card-body-style">
+                                            <h2 class="card-title">$199</h2>
+                                            <p class="card-text card-title-seco">Standard PatentSearch.</p>
+                                            <p>For example, on a bicycle, the chain and the sprockets work together to transfer power from the pedals to the wheel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col col-lg-6 col-md-4 col-sm-4">
+                                    <div class="card card-bg-pricing">
+                                        <div class="card-body ml-3 card-body-style">
+                                            <h2 class="card-title">$199</h2>
+                                            <p class="card-text card-title-seco">Standard PatentSearch.</p>
+                                            <p>For example, on a bicycle, the chain and the sprockets work together to transfer power from the pedals to the wheel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        
     </main>
 
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static//js//landing-video.js"></script>
 
 </body>
 </html>

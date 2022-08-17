@@ -2,10 +2,10 @@
     padding: 0px;
     margin: 0px;
 }
-
+    /* root */
 :root {
     /* text Color */
-    --main-text-color: #010558;
+    --main-text-color: #00045F;
     --second-text-color:#D9B00F;
     --para-text-color: #585858;
 
@@ -18,11 +18,38 @@
     --third-bgcard-color:#FAF7F4;
      /*Container*/
      --main-container-margin:30px; 
-     
-     
-    
   }
+  h1{
+    color: var(--main-text-color);
+    font-size:35px;
+    font-weight: bold;
+  }
+p{
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--para-text-color);
+    
+}
+h6{
+    color: var(--second-text-color);
+    font-weight: bold;
+}
+section{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
+
+/* customize with classes */
+
+
+
+.nav-link{
+    /* width: 140%; */
+}
+.nav-list-item{
+    margin-left: 460px;
+} 
 .text-color-nav{
     color: var(--main-text-color);
     font-weight: bold;
@@ -45,15 +72,151 @@
     font-weight: 700;
     color:var(--main-text-color) ;
 }
-.showcase-para-text p{
+/* .showcase-para-text p{
     font-size: 14px;
     line-height: 19px;
     color: var(--para-text-color);
-}
+} */
 .showcase-form-style{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
-.showcase-form-style input{
-    height: 70px;    
-    position: relative;
+
+.inner-addon { 
+    position: relative; 
 }
+.inner-addon input {
+    padding-top: 10px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px ;
+  color: var(--para-text-color);
+  margin-top: 7px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px; right: 10px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+.submit-form-button{
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 460px;
+}
+.submit-form-button input{
+    background-color: var(--landing-bg-button);
+    padding: 7px 60px 10px 60px;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+.video-main-div{
+}
+.video-landing{
+    border-radius: 10px;
+    margin-top: 80px;
+    
+}
+.button-pasue{
+    position: absolute;
+     background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: -20px;
+    margin-top: 160px;
+    z-index: 5px;
+    border-radius: 50%;
+}
+.button-pasue-video{
+    background-color: black;
+    color:var(--second-text-color);
+    padding: 10px;
+    z-index: 5px;
+    border-radius: 50%;
+}
+.showcase-fotter{
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+.content-review{
+    margin-top: 100px;
+}
+
+.attorney-search-btn{
+    background-color: var(--landing-bg-button);
+    color: var(--main-text-color);
+    font-weight: bold;
+    padding: 2px 30px;
+}
+.content-img-review img{
+    width: 350px;
+    margin-left: 180px;
+}
+.color-main-bg{
+    width: 92%;
+    height: 230px;
+    position: absolute;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color:#F7EDFC;
+}
+.layout-card-item{
+    margin-top: 170px;
+    margin-left: 20px;
+
+}
+.layout-card-item-mid{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.card-style-type{
+    background-color: var(--card-bg-color);
+}
+.absolute-card-img{
+    position: absolute;
+    z-index: 1;
+}
+.absolute-card-img img{
+    width: 60px;
+   
+}
+.card-title-font{
+    color: var(--main-text-color);
+    /* margin: 10px; */
+    font-size: 24px;
+    font-weight: bold;
+}
+.card-work-btn{
+    background-color: var(--landing-bg-button);
+    font-size: 15px;
+}
+.card-body-styl{
+    color: var(--para-text-color);
+    font-weight: bold;
+}
+.card-title-seco{
+    font-weight: 20px;
+    font-weight: bold;
+}
+.card-mid-absolute{
+    position: absolute;
+    z-index:3;
+    margin-top: -100;
+    margin-left: 400px;
+}
+.content-pricing{
+    margin-top: 70px;
+}
+.card-bg-pricing
