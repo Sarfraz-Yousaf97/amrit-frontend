@@ -1,11 +1,6 @@
-$(document).ready(function() {
-    // Toggle menu on click
-    $("#menu-toggler").click(function() {
-      toggleBodyClass("menu-active");
-    });
-  
-    function toggleBodyClass(className) {
-      document.body.classList.toggle(className);
-    }
-  
-   });
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});

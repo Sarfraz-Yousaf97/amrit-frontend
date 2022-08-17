@@ -1,6 +1,11 @@
 *{
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
+}
+body{
+    display: block;
+    content: '';
 }
     /* root */
 :root {
@@ -12,6 +17,9 @@
     /* All Background Color */
     --landing-bg-button: #F4C921;
     --second-bg-button:#EFE4BB;
+    --accordion-bg-color: #F7EDFC;
+    --arrow-bg-colo: #710135;
+
     /* Cards */
     --card-bg-color: #FFFADE;
     --secondory-bgcard-color:#E7FCE1;
@@ -38,14 +46,22 @@ section{
     margin-top: 100px;
     margin-bottom: 50px;
 }
-
+ul{
+    list-style-type: none;
+}
 
 /* customize with classes */
 
-
-
-.nav-link{
-    /* width: 140%; */
+@media (max-width:766px) {
+    .navbar-nav {
+        padding: 0;
+        margin: 0;
+        margin-left: 0;
+    }
+}
+.scroll-container{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 .nav-list-item{
     margin-left: 460px;
@@ -145,6 +161,13 @@ section{
     z-index: 5px;
     border-radius: 50%;
 }
+.button-pasue-top{
+    background-color: var(--arrow-bg-colo);
+    color:white;
+    padding: 5px 8px;
+    /* z-index: 5px; */
+    border-radius: 50%;
+}
 .showcase-fotter{
     color: var(--main-text-color);
     margin-bottom: 50px;
@@ -207,16 +230,157 @@ section{
     font-weight: bold;
 }
 .card-title-seco{
-    font-weight: 20px;
+    font-size: 14px;
     font-weight: bold;
+}
+.pricing-text-para{
+    font-size: 10px;
 }
 .card-mid-absolute{
     position: absolute;
-    z-index:3;
-    margin-top: -100;
-    margin-left: 400px;
+    z-index:1;
+    /* margin-top: -80; */
+    margin-bottom: 80px;
+    margin-left: 350px;
 }
 .content-pricing{
+    margin-top: 80px;
+}
+.card-bg-pricing{
+    background-color: var(--card-bg-color);
+    border: none;
+    /* width: 340px; */
+    margin-left: 35px;
+    position: relative;
+}
+.card-bg-pricing-last{
+    background-color: var(--third-bgcard-color);
+    border: none;
+    height: 370px;
+    margin-left: -15px;
+    width: 320px;
+    /* margin-left: 35px; */
+    position: relative;
+}
+.card-bg-pricing-seco{
+    background: var(--secondory-bgcard-color);
+    width:400px;
+    /* border-radius: 20px; */
+    margin-left: -12px;
+    margin-top: -50px;
+}
+.pricing-ul-style{
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.list-style-widthout-green-tech{
+    font-size: 13px;
+    font-weight: bold;
+    color: #CBC7C7;
+}
+.list-style-green-tech{
+    font-size: 13px;
+    font-weight: bold;
+    color: #313131;
+}
+.list-style-green-tech img{
+    width: 15px;
+}
+.pricing-button-buy{
+    background-color: var(--second-bg-button);
+    color: var(--main-text-color);
+    position: absolute;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: -55px;
+    padding:8px 25px;
+}
+.pricing-button-buy-last{
+    background-color: var(--second-bg-button);
+    color: var(--main-text-color);
+    position: absolute;
+    font-weight: bold;
+    margin-top: 45px;
+    font-size: 10px;
+    margin-left: -55px;
+    padding:8px 25px;
+}
+.card-bach-fotter{
+    margin-top: 100px;
+}
+.card-bach-fotter-mid span{
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--para-text-color);
+}
+.card-bach-fotter-mid{
+    margin-top: 65px;
+}
+
+/* accordion */
+.accordion-faq {
+
     margin-top: 70px;
 }
-.card-bg-pricing
+.accordion-section{
+    background-color: var(--accordion-bg-color);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.accordion-btn{
+    padding: 5px 10px;
+    background-color: var(--accordion-bg-color);
+    color: var(--main-text-color);
+    cursor: pointer;
+    margin: 15px 15px;
+    width: 98%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .accordion-btn span{
+    font-size:17px;
+    font-weight: bold;
+  }
+  .accordion-btn:focus{
+    border: none;
+    outline: none;
+  }
+  
+  /* .active, .accordion:hover {
+    background-color: #ccc;
+  } */
+  
+  .accordion-btn:after {
+    content: '\002B';
+    color:var(--main-text-color);
+    font-weight: bold;
+    background-color: var(--landing-bg-button);
+    border: 2px solid var(--landing-bg-button) ;
+    border-radius: 50%;
+    padding:5px 8px;
+    float: right;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: var(--accordion-bg-color);
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: max-height 0.6s ease-out;
+}
+.panel p {
+    color: var(--main-text-color);
+    font-size: 15px;
+    line-height: 1.4em;
+    font-weight: bold;
+    
+  }

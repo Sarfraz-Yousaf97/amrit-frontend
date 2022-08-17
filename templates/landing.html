@@ -16,12 +16,12 @@
             type = "image/x-icon">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#topnav-menu" data-bs-offset="60">
-    <main>
+  
         <nav class="navbar bg-light navbar-expand-lg navigation fixed-top sticky">
             <div class="container">
                 <div class="">
                     <a  href="#">
-                        <img src="/static/image/logo-nav.png" alt="" style="width: 240px; margin-left:-40px ;">
+                        <img src="/static/image/logo-nav.png" alt="" style="width: 240px; margin-left:-40px;">
                     </a>
                 </div>
                 <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
@@ -36,7 +36,7 @@
                             <a class="nav-link text-color-nav" href="#works">How it Works</a>
                         </li>
                         <li class="nav-item ml-2 mr-2">
-                            <a class="nav-link text-color-nav" href="#pricing">FAQS</a>
+                            <a class="nav-link text-color-nav" href="#faqs">FAQS</a>
                         </li>
                         <li class="nav-item ml-2 mr-2">
                             <a class="nav-link text-color-nav" href="#pricing">Pricing</a>
@@ -49,13 +49,14 @@
                 </div>
             </div>
         </nav>
+        <main  style="scroll-behavior:smooth;">
         <!-- Home -->
-        <section class="mt-4">
+        <section class="mt-4" id="home">
             <div class="showcase-landing">
                 <div class="gradient-color">
                     <div class="container">
                         <div class="row">
-                            <div class="col col-lg-7">
+                            <div class="col-lg-7 col-md-6">
                                 <div class="mt-4">
                                     <div class="main">
                                         <h1 class="inner-text-showcase mb-4">Do you need <br> a Patent Search?</h1>
@@ -85,7 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-5">
+                            <div class="col-lg-5 col-md-6">
                                 <div class="container">
                                     <div class="text-center"> 
                                         <!-- <button class="button-pasue" id="play"><i class="fas fa-play"></i></button>  -->
@@ -114,7 +115,7 @@
                 <div class="container mt-4">
                     <div class="content-review">
                         <div class="row">
-                            <div class="col col-lg-6 col-sm-12">
+                            <div class="col-lg-6 col-sm-12">
                                 <div class="content text-left">
                                     <h6 class="text-uppercase">Attorney Search Review</h6>
                                     <h1>Validate your <br> results with a <br> atent Atrorney <br> Review!</h1>
@@ -129,7 +130,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col col-lg-6 col-sm-12">
+                            <div class="col-lg-6 col-sm-12">
                                 <div class="content content-img-review">
                                     <img src="/static//image/image 2.png" alt="">
                                 </div>
@@ -151,7 +152,7 @@
                         <div class="color-main-bg">
                         </div>
                         <div class="row">
-                            <div class="col col-lg-4 col-md-3 col-sm-2">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="layout-card-item">
                                     <div class="absolute-card-img">
                                         <img src="/static/image/search.png" alt="">
@@ -165,7 +166,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col-lg-4 col-md-3 col-sm-2 mb-4">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="layout-card-item-mid mb-4">
                                     <div class="absolute-card-img">
                                         <img src="/static/image/information.png" alt="">
@@ -192,7 +193,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col-lg-4 col-md-3 col-sm-2">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="layout-card-item">
                                     <div class="absolute-card-img">
                                         <img class="ml-2" src="/static/image/start-2.png" style="width: 50px; margin-top: -20px;" alt="">
@@ -215,7 +216,7 @@
             </div>
         </section>
         <!-- Pricing -->
-        <section  style="height: 100vh;">
+        <section id="pricing">
             <div class="container">
                 <div class="main">
                     <div class="content mt-4 mb-4">
@@ -223,50 +224,219 @@
                             <h6 class="text-uppercase">Pricing</h6>
                             <h1>Pricing</h1>
                         </div>
-                        <div class="content content-pricing">
-                            <div class="row">
-                                <div class="col col-lg-6 col-md-4 col-sm-4">
-                                    <div class="card card-bg-pricing">
-                                        <div class="card-body ml-3 card-body-style">
-                                          <h2 class="card-title">$199</h2>
-                                          <p class="card-text card-title-seco">Standard PatentSearch.</p>
-                                            <p style="">For example, on a bicycle, the chain and the sprockets </p>
+
+                         <div class="content content-pricing">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card card-bg-pricing">
+                                            <div class="card-body ml-3 card-body-style">
+                                                <h2 class="card-title">$199</h2>
+                                                <p class="card-text card-title-seco">Standard PatentSearch.</p>
+                                                <p class="pricing-text-para">For example, on a bicycle, the chain and the sprockets </p>
+                                                <ul class="pricing-ul-style">
+                                                    <li class="d-flex mt-2 list-style-green-tech "><div class="mr-3"><img src="/static/image/green-check.png" alt=""></div> Standard Patent search</li>
+                                                    <li class="d-flex mt-2 list-style-green-tech"><div class="mr-3"><img src="/static/image/green-check.png" alt=""></div> Standard Patent search</li>
+                                                    <li class="ml-4 mt-3 pl-2 list-style-widthout-green-tech" > Standard Patent search</li>
+                                                    <li class="ml-4 mt-4 pl-2 list-style-widthout-green-tech" > Standard Patent search</li>
+                                                        
+                                                </ul>
+                                                <div class="card-fotter text-center">
+                                                    <a href="#">
+                                                        <button class="btn text-uppercase pricing-button-buy">buy now</button>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
-                                </div>
-                                
-                                <div class="col col-lg-4 col-md-4 col-sm-4 card-mid-absolute">
-                                    <div class="card card-bg-pricing">
-                                        <div class="card-body ml-3 card-body-style">
-                                            <h2 class="card-title">$199</h2>
-                                            <p class="card-text card-title-seco">Standard PatentSearch.</p>
-                                            <p>For example, on a bicycle, the chain and the sprockets work together to transfer power from the pedals to the wheel.</p>
+                                        <div class="card-bach-fotter text-center">
+                                            <img src="/static/image/green-check.png" alt="">
+                                            <span class="ml-2">
+                                                3-7 Days
+                                            </span>
                                         </div>
                                     </div>
-                                </div>
-    
-                                <div class="col col-lg-6 col-md-4 col-sm-4">
-                                    <div class="card card-bg-pricing">
-                                        <div class="card-body ml-3 card-body-style">
-                                            <h2 class="card-title">$199</h2>
-                                            <p class="card-text card-title-seco">Standard PatentSearch.</p>
-                                            <p>For example, on a bicycle, the chain and the sprockets work together to transfer power from the pedals to the wheel.</p>
+                                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12 card-mid-absolute">
+                                        <div class="card-bg-pricing-seco">
+                                            <div class="card-body ml-3 card-body-style">
+                                                <h2 class="card-title">$799</h2>
+                                                <p class="card-text card-title-seco" style="font-size:19px; line-height:20px ;">Advance Patent Search <br> and Smart Rating.</p>
+                                                <p class="pricing-text-para mr-4 p-2">For example, on a bicycle, the chain and the sprockets work
+                                                    together to transfer power from the pedals to the wheel.</p>
+                                                    <ul class="pricing-ul-style ml-4 pl-4">
+                                                        <li class="d-flex mt-2 list-style-green-tech ">
+                                                            <div class="mr-3">
+                                                                <img style="width: 15px;" src="/static/image/green-check.png" alt="">
+                                                            </div> Advanced Patent search
+                                                         </li>
+                                                        <li class="d-flex mt-2 list-style-green-tech">
+                                                            <div class="mr-3">
+                                                                <img style="width: 15px;" src="/static/image/green-check.png" alt="">
+                                                            </div> 3 - 7 day turnaround
+                                                        </li>
+                                                        <li class="d-flex mt-2 list-style-green-tech">
+                                                            <div class="mr-3">
+                                                                <img style="width: 15px;" src="/static/image/green-check.png" alt="">
+                                                            </div> Advanced Classification Check
+                                                        </li>
+                                                        <li class="d-flex mt-2 list-style-green-tech">
+                                                            <div class="mr-3">
+                                                                <img style="width: 15px;" src="/static/image/green-check.png" alt="">
+                                                            </div> Agent Verification 
+                                                        </li>
+                                                        <li class="d-flex mt-2 list-style-green-tech">
+                                                            <div class="mr-3">
+                                                                <img style="width: 15px;" src="/static/image/green-check.png" alt="">
+                                                            </div> 1X Search Updates 
+                                                        </li>
+                                                        <li class="d-flex mt-2 list-style-green-tech">
+                                                            <div class="mr-3">
+                                                                <img style="width: 15px;" src="/static/image/green-check.png" alt="">
+                                                            </div> Advanced Classification Check
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="card-fotter text-center">
+                                                        <a href="#">
+                                                            <button class="btn text-uppercase pricing-button-buy" style="background-color:#F4C921 ;">buy now</button>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bach-fotter-mid text-center">
+                                            <span class="text-success  mr-2" style="font-size:14px ;">FAST</span>
+                                            <img src="/static/image/green-check.png" alt="">
+                                            <span class="ml-2">
+                                                5-10 Days
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card card-bg-pricing-last" style="margin-left: px;">
+                                            <div class="card-body ml-3 card-body-style">
+                                                <h2 class="card-title">$1299</h2>
+                                                <p style="font-size:12px ;" class="mr-2 mb-4 pb-4">Advanced Patent Search Smart Rating  Attorneyresults review & consultation </p>
+                                                <ul class="pricing-ul-style ml-4">
+                                                    <li class="d-flex mt-2 list-style-green-tech ">
+                                                        <div class="mr-3">
+                                                            <img src="/static/image/green-check.png" alt="">
+                                                        </div> Advanced Patent search
+                                                     </li>
+                                                    <li class="d-flex mt-2 list-style-green-tech">
+                                                        <div class="mr-3">
+                                                            <img src="/static/image/green-check.png" alt="">
+                                                        </div> 10 - 12 day turnaround
+                                                    </li>
+                                                    <li class="d-flex mt-2 list-style-green-tech">
+                                                        <div class="mr-3">
+                                                            <img src="/static/image/green-check.png" alt="">
+                                                        </div> Advanced Classification Check
+                                                    </li>
+                                                 </ul>
+                                                 <div class="card-fotter text-center">
+                                                    <a href="#">
+                                                        <button class="btn text-uppercase pricing-button-buy-last">buy now</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bach-fotter text-center">
+                                            <img src="/static/image/green-check.png" alt="">
+                                            <span class="ml-2">
+                                                5-10 Days
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+    <section id="faqs">
+        <div class="main">
+            <div class="container">
+                <div class="content">
+                    <div class="header text-center">
+                        <h6 class="text-uppercase">Want to Know More</h6>
+                        <h1>Frequently Asked Question</h1>
+                    </div>
+
+                    <div class="accordion-faq">
+                        <div class="accordion-section">
+                            <button class="accordion-btn text-left">
+                                <span class="ml-2">
+                                Why is a patent search important?
+                                </span>
+                            </button>
+                            <div class="panel">
+                                <p class="ml-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <button class="accordion-btn text-left">
+                                <span class="ml-2">
+                                    Who conducts the patent search? 
+                                </span>
+                            </button>
+                            <div class="panel">
+                                <p class="ml-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <button class="accordion-btn text-left">
+                                <span class="ml-2">
+                                    Where do I find my classifications?
+                                </span>
+                            </button>
+                            <div class="panel">
+                                <p class="ml-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                       
 
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-
+        <div class="mt-4 pt-4 main">
+            <div class="container">
+                <div class="content">
+                    <div class="d-flex justify-content-between">
+                        <div class="">
+                            <a  href="#">
+                                <img src="/static/image/logo-nav.png" alt="" style="width: 200px; margin-left:-40px;">
+                            </a>
+                        </div>
+                        <ul class="d-flex">
+                            <li class="m-3">Privacy Policy</li>
+                            <li class="m-3">Terms and Condition</li>
+                            <li class="m-3">User Policy</li>
+                        </ul>
+                        <div class="d-flex mt-3">
+                            <span class="text-uppercase font-weight-bold" style="font-size:12px ;">Scroll To Top</span>
+                            <a class="ml-3" href="#">
+                         
+                                    <i class="button-pasue-top fa fa-arrow-up"></i></button> 
+                        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </main>
+
 
 
     <script src="/static/js/bootstrap.bundle.min.js"></script>
